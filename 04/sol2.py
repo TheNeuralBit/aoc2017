@@ -24,5 +24,5 @@ assert valid_password('a ab abc abd abf abj') == True
 assert count_valid_passwords(['abcde fghij', 'abcde xyz ecdab', 'a ab abc abd abf abj']) == 2
 
 with open('input', 'r') as fp:
-    rows = (line.strip('\n') for line in fp.readlines())
+    rows = (line.strip('\n') for line in fp)
     print(count_valid_passwords(rows))

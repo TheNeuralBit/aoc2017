@@ -19,8 +19,6 @@ def reallocate(banks):
     count = 0
 
     while banks not in previous_banks:
-        #print(banks)
-        #print(previous_banks)
         previous_banks.append(array('I', banks))
         redistribute_banks(banks)
         count += 1

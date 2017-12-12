@@ -11,5 +11,5 @@ def follow_jumps(arr):
 assert follow_jumps([0, 3, 0, 1, -3]) == 5
 
 with open('input', 'r') as fp:
-    rows = (line.strip('\n') for line in fp.readlines())
+    rows = (line.strip('\n') for line in fp)
     print(follow_jumps(list(map(int, rows))))

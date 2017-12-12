@@ -14,6 +14,6 @@ assert compute_row([3, 8, 6, 5]) == 2
 assert compute_checksum([[5, 9, 2, 8], [9, 4, 7, 3], [3, 8, 6, 5]]) == 9
 
 with open('input', 'r') as fp:
-    rows = ([int(item) for item in line.strip().split('\t')] for line in fp.readlines())
+    rows = ([int(item) for item in line.strip().split('\t')] for line in fp)
     print(compute_checksum(rows))
 

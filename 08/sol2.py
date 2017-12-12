@@ -24,6 +24,6 @@ def do_instructions(l):
 
 
 with open('input', 'r') as fp:
-    rows = (line.strip() for line in fp.readlines())
+    rows = (line.strip() for line in fp)
     registers = do_instructions(parse(row) for row in rows)
     print(registers)

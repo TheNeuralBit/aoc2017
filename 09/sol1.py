@@ -33,8 +33,6 @@ def parse_garbage(stream):
 
     return score, count
 
-
-
 with open('input', 'r') as fp:
     stream = fp.readline().strip()
     print(parse_garbage(stream))

@@ -66,7 +66,7 @@ def check_weight(name, program):
 
 
 with open('input', 'r') as fp:
-    rows = (line.strip() for line in fp.readlines())
+    rows = (line.strip() for line in fp)
     result = reduce(add_program, (parse(row) for row in rows), {"root": {"children": {}}, "reverse": {}})
     print(result["root"]["children"].keys())
 
